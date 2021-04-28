@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    {% block head %}
+    <meta charset="utf-8" />
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}" />
+    <style>input:focus, textarea:focus, select:focus{
+        outline: none;
+    }</style>
+    {% endblock %}
+</head>
+
+<body>
+    <body style="background: var(--main-blue);"></body>
+    <div class="topnav">
+        {% block navbar%}{% endblock%}
+    </div>
+    {% block content %}{% endblock %}
+</body>
+
+</html>
