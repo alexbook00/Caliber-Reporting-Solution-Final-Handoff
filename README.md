@@ -27,3 +27,6 @@ run command $ `python`
 2. Query for admin `admin = User.query.filter_by(username = 'CaliberAdmin').first()`
 3. Change passwors `admin.password = "enterNewPassword"`
 4. commit changes to database `db.session.commit()`
+
+# Final Video
+The file size for our final presentation is too large for Github to process, so it can be found at this link: https://drive.google.com/file/d/1z4aiWRxwrzr-ssnoofEHiarLLAk3HDBx/view?usp=sharing
